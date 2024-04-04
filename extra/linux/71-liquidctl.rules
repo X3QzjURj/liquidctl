@@ -470,6 +470,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="048d", ATTRS{idProduct}=="8297", TAG+="uacc
 # MSI MPG Coreliquid K360
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="0db0", ATTRS{idProduct}=="b130", TAG+="uaccess"
 
+# MSI MEG Coreliquid S360
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0db0", ATTRS{idProduct}=="6a05", TAG+="uaccess"
+
 # NZXT E500
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="7793", ATTRS{idProduct}=="5911", TAG+="uaccess"
 

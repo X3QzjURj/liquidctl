@@ -318,6 +318,7 @@ class MpgCooler(UsbHidDriver):
     }
     _MATCHES = [
         (0x0DB0, 0xB130, "MSI MPG Coreliquid K360", {"fan_count": 5}),
+        (0x0DB0, 0x6A05, "MSI MEG Coreliquid S360", {"fan_count": 4}),
         (
             0x0DB0,
             0xCA00,
