@@ -387,7 +387,7 @@ class MpgCooler(UsbHidDriver):
         self._aprom_firmware_version = aprom_hi << 4 + aprom_lo
         ldrom_hi, ldrom_lo = self.get_firmware_version_ldrom()
         self._ldrom_firmware_version = ldrom_hi << 4 + ldrom_lo
-        self._oled_firmware_version = self.get_oled_firmware_version()
+        # self._oled_firmware_version = self.get_oled_firmware_version()
 
         return ret
 
@@ -426,7 +426,7 @@ class MpgCooler(UsbHidDriver):
             self.switch_to_smart_mode()
 
         return [
-            ("Display firmware version", self._oled_firmware_version, ""),
+            # ("Display firmware version", self._oled_firmware_version, ""),
             ("APROM firmware version", self._aprom_firmware_version, ""),
             ("LDROM firmware version", self._ldrom_firmware_version, ""),
             ("Serial number", self.serial_number, ""),
